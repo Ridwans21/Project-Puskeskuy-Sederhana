@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Puskeskuy</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/PUSKESKUY-removebg-preview.webp" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Header-->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo me-md-auto"><a href="index.html">Puskeskuy</a></h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#beranda">Beranda</a></li>
+                 <li><a class="nav-link scrollto" href="#puskesmas">Puskesmas</a></li>
+                <!-- Link menuju halaman dokter.html -->
+                <li><a class="nav-link scrollto" href="#doctors">Dokter</a></li>
+                <!-- Link menuju halaman FAQ -->
+                <li><a class="nav-link scrollto" href="#faq">FaQ</a></li>
+            </ul>
+        </nav>
+        <!--<a href="dokter.html" class="login-btn scrollto"><span class="d-none d-md-inline">Dokter</span></a>-->
+        <a href="antrian.html" class="login-btn scrollto"><span class="d-none d-md-inline">Antrian</span></a>
+        <a href="registrasi1.html" class="login-btn scrollto"><span class="d-none d-md-inline">Registrasi</span></a>
+    </div>
+</header>
+  <!--End Header-->
+
+
+   <!--Bagian Beranda-->
+   <section id="beranda" class="d-flex align-items-center">
+    <div class="container">
+        <h1>Selamat Datang di Puskeskuy</h1>
+        <h2>"Daftar Antrian Online Sekarang! Nikmati Kesehatan Tanpa Ribet!"</h2>
+    </div>
+</section><!--End Beranda-->
+      <!--Start Main-->
+      <main id="main">
+        <!--Kenapa Puskeskuy-->
+        <section id="kenapa-puskeskuy" class="kenapa-puskeskuy">
+    <div class="container">
+        <div class="col-lg-8 d-flex align-items-center">
+            <div class="icon-boxes d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-xl-4 d-flex align-items-center">
+                        <div class="icon-box mt-4 mt-xl-0">
+                            <i class="bx bx-receipt"></i>
+                            <div id="article-container02"></div>
+                            <script>
+                                var data = {
+                                    "status": "ok",
+                                    "totalResults": 1,
+                                    "articles": [{
+                                        "source": {
+                                            "id": "google-news",
+                                            "name": "Google News"
+                                        },
+                                        "author": "Malang Posco Media",
+                                        "title": "Vaksin HPV Perlu Diberikan Sedini Mungkin - Malang Posco Media",
+                                        "description": null,
+                                        "url": "https://news.google.com/rss/articles/CBMiRmh0dHBzOi8vbWFsYW5ncG9zY29tZWRpYS5pZC92YWtzaW4taHB2LXBlcmx1LWRpYmVyaWthbi1zZWRpbmktbXVuZ2tpbi_SAQA?oc=5",
+                                        "urlToImage": 'vaksin.jpg',
+                                        "publishedAt": "2024-02-13T08:06:40Z",
+                                        "content": null
+                                    }]
+                                };
+
+                                var articleContainer = document.getElementById('article-container02');
+
+                                data.articles.forEach(function(article) {
+                                    var articleDiv = document.createElement('div');
+                                    articleDiv.classList.add('article');
+
+                                    // Tambahkan gambar (direct link)
+                                    if (article.urlToImage) {
+                                        var imageElement = document.createElement('img');
+                                        imageElement.src = article.urlToImage;
+                                        imageElement.alt = "Gambar Artikel";
+                                        imageElement.style.maxWidth = '100%';
+                                        articleDiv.appendChild(imageElement);
+                                    }
+
+                                    var linkElement = document.createElement('a');
+                                    linkElement.textContent = article.title;
+                                    linkElement.href = article.url;
+                                    linkElement.target = "_blank";
+                                    articleDiv.appendChild(linkElement);
+
+                                    articleContainer.appendChild(articleDiv);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!-- End col-xl-4 -->
+                    <div class="col-xl-4 d-flex align-items-stretch">
+                        <div class="icon-box mt-4 mt-xl-0">
+                            <i class="bx bx-receipt"></i>
+                            <div id="article-container01"></div>
+                            <script>
+                                var data = {
+                                    "status": "ok",
+                                    "totalResults": 66,
+                                    "articles": [{
+                                        "source": {
+                                            "id": "google-news",
+                                            "name": "Google News"
+                                        },
+                                        "author": "HaiBunda",
+                                        "title": "Mengenal Keladi Tikus, Tanaman yang Disebut Bisa Atasi Kanker Payudara dan Redakan Stress",
+                                        "description": null,
+                                        "url": "https://news.google.com/rss/articles/CBMilAFodHRwczovL3d3dy5oYWlidW5kYS5jb20vbW9tcy1saWZlLzIwMjQwMjEyMTIwMTI2LTc2LTMyODU5MC9tZW5nZW5hbC1rZWxhZGktdGlrdXMtdGFuYW1hbi15YW5nLWRpc2VidXQtYmlzYS1hdGFzaS1rYW5rZXItcGF5dWRhcmEtZGFuLXJlZGFrYW4tc3RyZXNz0gGYAWh0dHBzOi8vd3d3LmhhaWJ1bmRhLmNvbS9tb21zLWxpZmUvMjAyNDAyMTIxMjAxMjYtNzYtMzI4NTkwL21lbmdlbmFsLWtlbGFkaS10aWt1cy10YW5hbWFuLXlhbmctZGlzZWJ1dC1iaXNhLWF0YXNpLWthbmtlci1wYXl1ZGFyYS1kYW4tcmVkYWthbi1zdHJlc3MvYW1w?oc=5",
+                                        "urlToImage": 'tikus.jpeg',
+                                        "publishedAt": "2024-02-13T08:17:00Z",
+                                        "content": null
+                                    }]
+                                };
+
+                                var articleContainer = document.getElementById('article-container01');
+
+                                data.articles.forEach(function(article) {
+                                    var articleDiv = document.createElement('div');
+                                    articleDiv.classList.add('article');
+
+                                    // Tambahkan gambar (direct link)
+                                    if (article.urlToImage) {
+                                        var imageElement = document.createElement('img');
+                                        imageElement.src = article.urlToImage;
+                                        imageElement.alt = "Gambar Artikel";
+                                        imageElement.style.maxWidth = '100%';
+                                        articleDiv.appendChild(imageElement);
+                                    }
+
+                                    var linkElement = document.createElement('a');
+                                    linkElement.textContent = article.title;
+                                    linkElement.href = article.url;
+                                    linkElement.target = "_blank";
+                                    articleDiv.appendChild(linkElement);
+
+                                    articleContainer.appendChild(articleDiv);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!-- End col-xl-4 -->
+                    <div class="col-xl-4 d-flex align-items-stretch">
+                        <div class="icon-box mt-4 mt-xl-0">
+                            <i class="bx bx-receipt"></i>
+                            <div id="article-container"></div>
+                            <script>
+                                var data = {
+                                    "status": "ok",
+                                    "totalResults": 66,
+                                    "articles": [{
+                                        "source": {
+                                            "id": "google-news",
+                                            "name": "Google News"
+                                        },
+                                        "author": "Ciputra Hospital",
+                                        "title": "Kanker Esofagus: Pentingnya Memahami Gejala hingga Pencegahannya - Ciputra Hospital",
+                                        "description": null,
+                                        "url": "https://news.google.com/rss/articles/CBMiLGh0dHBzOi8vY2lwdXRyYWhvc3BpdGFsLmNvbS9rYW5rZXItZXNvZmFndXMv0gEA?oc=5",
+                                        "urlToImage": "kanker.jpg",
+                                        "publishedAt": "2024-02-13T08:25:51Z",
+                                        "content": null
+                                    }]
+                                };
+
+                                var articleContainer = document.getElementById('article-container');
+
+                                data.articles.forEach(function(article) {
+                                    var articleDiv = document.createElement('div');
+                                    articleDiv.classList.add('article');
+
+
+                                    // Tambahkan gambar (direct link)
+                                    if (article.urlToImage) {
+                                      var imageElement = document.createElement('img');
+                                      imageElement.src = article.urlToImage;
+                                      imageElement.alt = "Gambar Artikel";
+                                      imageElement.style.maxWidth = '100%';
+                                      articleDiv.appendChild(imageElement);
+                                    }
+
+                                    var linkElement = document.createElement('a');
+                                    linkElement.textContent = "Kanker Esofagus: Pentingnya Memahami Gejala hingga Pencegahannya";
+                                    linkElement.href = article.url;
+                                    linkElement.target = "_blank";
+                                    articleDiv.appendChild(linkElement);
+
+                                    articleContainer.appendChild(articleDiv);
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!-- End col-xl-4 -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End icon-boxes -->
+        </div>
+        <!-- End col-lg-8 -->
+    </div>
+    <!-- End container -->
+</section>
+    <!-- End Why Us Section -->
+    <head>
+      <title>Menampilkan Peta dengan LeafletJs</title>
+      <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+      <!-- Link untuk font Roboto -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <!-- CSS lainnya -->
+  </head>
+  
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <style>
+      #map {
+          width: 500px;
+          height: 500px;
+          margin: 0 auto;
+      }
+      </style>
+  </head>
+  <body>
+      <div id="map"></div>
+    
+  
+    <script>
+        var mapOptions = {
+            center: [-6.8870507,107.6128997],
+            zoom: 13
+        };
+  
+        var map = new L.map('map', mapOptions);
+        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        map.addLayer(layer);
+  
+        //UPT Puskesmas Puter
+        L.marker([-6.8980182,107.6222482]).addTo(map)
+        .bindPopup('<b>UPT Puskesmas Puter</b><br>Jl. Puter No.3, Sadang Serang, Kecamatan Coblong, Kota Bandung, Jawa Barat 40133<br>Jam  operasional 08:00 - 11:00<br>Rating 4,0')
+        .openPopup();
+  
+        //UPT Puskesmas Pasundan Kota Bandung
+        L.marker([-6.9274417,107.6061351]).addTo(map)
+        .bindPopup('<b>UPT Puskesmas Pasundan Kota Bandung</b><br>Jl. Pasundan No.99, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251<br>Jam  operasional 07:30 - 14:30<br>Rating 3,2')
+        .openPopup();
+        
+        //Puskesmas Dago
+        L.marker([-6.8760292,107.6136975]).addTo(map)
+        .bindPopup('<b>Puskesmas Dago<br></b>Jl. Ir. H. Juanda No.360, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135<br>Jam  operasional 07:30 - 11:00<br>Rating 3,4')
+        .openPopup();
+  
+        //Puskesmas Astana Anyar
+        L.marker([-6.9336761,107.6020899]).addTo(map)
+        .bindPopup('<b>Puskesmas Astana Anyar</b><br>Jl. Rasdan No.1, Nyengseret, Kecamatan Astanaanyar, Kota Bandung, Jawa Barat 40242<br>Jam  operasional 07:30 - 14:30<br>Rating 4,4')
+        .openPopup();
+  
+        //Puskesmas Balai Kota Bandung
+        L.marker([-6.9122744,107.6102635]).addTo(map)
+        .bindPopup('<b>Puskesmas Balai Kota Bandung</b><br>Jl. Babakan Ciamis, Kecamatan Sumur Bandung, Kota Bandung, Jawa Barat 40117<br>Jam  operasional 08:00 - 12:00<br>Rating 4,4')
+        .openPopup();
+  
+        //Puskesmas Puskesmas Taman Sari Kota Bandung
+        L.marker([-6.8970741,107.6073138]).addTo(map)
+        .bindPopup('<b>Puskesmas Puskesmas Taman Sari Kota Bandung</b><br>Jl. Kb. Bibit Utara II No. 182/58, Tamansari, Kecamatan Bandung Wetan, Kota Bandung, Jawa Barat 40116<br>Jam  operasional 07:30 - 14:30<br>Rating 3,6')
+        .openPopup();
+  
+        var markers = [];
+        function addMarker(e) {
+        var marker = L.marker(e.latlng).addTo(map);
+        markers.push(marker);
+        }
+        
+        function clearMarkers() {
+        for (var i = 0; i < markers.length; i++) {
+        map.removeLayer(markers[i]);
+        }
+        markers = [];
+        }
+  
+        function makePolyline() {
+        var latlngs = [];
+        for (var i = 0; i < markers.length; i++) {
+        latlngs.push(markers[i].getLatLng());
+        }
+        var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+        }
+        map.on('click', addMarker);
+  
+        var polyline = null;  // Tambahkan variabel ini
+  
+        function makePolyline() {
+        var latlngs = [];
+        for (var i = 0; i < markers.length; i++) {
+            latlngs.push(markers[i].getLatLng());
+        }
+        // Pastikan polyline lama dihapus sebelum membuat yang baru
+        if (polyline) {
+            map.removeLayer(polyline);
+        }
+        polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+        }
+  
+        function clearPolyline() {  // Fungsi baru untuk menghapus polyline
+        if (polyline) {
+            map.removeLayer(polyline);
+            polyline = null;
+        }
+        }
+        
+    </script>
+  <div class="button-container">
+    <button onclick="clearMarkers()">Hapus Marker</button>
+    <button onclick="makePolyline()">Buat Garis Jarak</button>
+    <button onclick="clearPolyline()">Hapus Garis Jarak</button> 
+  </div>
+  
+  <style>
+    .button-container {
+      text-align: center;
+  }
+  
+  .button-container button {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px; /* Atur margin sesuai keinginan Anda */
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: 0.3s;
+  }
+  
+  </style>
+  </body>
+
+    <!-- Puskesmas -->
+    <section id="puskesmas" class="puskesmas">
+      <div class="container">
+
+          <div class="section-title">
+              <h2>Informasi Puskesmas Kota Bandung</h2>
+              <p>Berikut Lokasi Puskesmas Yang Berada di Kota Bandung</p>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                  <div class="icon-box">
+                      <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                      <h4><a href="https://www.google.com/maps/place/UPT+Puskesmas+Puter/@-6.8980129,107.6196733,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e7b2ba1a1373:0xd26e5a955baccb77!8m2!3d-6.8980182!4d107.6222482!16s%2Fg%2F11bc7ql46s?entry=ttu">UPT Puskesmas Puter</a></h4>
+                      <p>Jl. Puter No.3, Sadang Serang, Kecamatan Coblong, Kota Bandung Jawabarat 40133</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="fas fa-pills"></i></div>
+                    <h4><a href="https://www.google.com/maps/place/UPT+Puskesmas+Pasundan+Kota+Bandung/@-6.9274417,107.6061351,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e627efc1d077:0x1b93885739c41b89!8m2!3d-6.927447!4d107.60871!16s%2Fg%2F11b6j4sz66?entry=ttu">UPT Puskesmas Pasundan Kota Bandung</a></h4>
+                    <p>Jl. Pasundan No.99, Balonggede, Kecamatan Regol, Kota Bandung, Jawa Barat 40251</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                  <div class="icon-box">
+                    <div class="icon"><i class="fas fa-hospital-user"></i></div>
+                    <h4><a href="https://www.google.com/maps/place/Puskesmas+Dago/@-6.8760293,107.6159935,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e6e329cb6519:0x89adea1094986ee3!8m2!3d-6.8760346!4d107.6185684!16s%2Fg%2F11cjk35j58?entry=ttu">Puskesmas Dago</a></h4>
+                    <p>Jl. Ir. H. Juanda No,360, Dago, Kecamatan Coblong, Kota Bandung, Jawa Barat 40135</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box">
+                    <div class="icon"><i class="fas fa-dna"></i></div>
+                    <h4><a href="https://www.google.com/maps/place/Puskesmas+Astanaanyar/@-6.9336761,107.6020899,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e8992d572315:0x65b676acc9cdb83f!8m2!3d-6.9336761!4d107.6020899!16s%2Fg%2F11g8nzj0fm?entry=ttu">Puskesmas Astana Anyar</a></h4>
+                    <p>jl. Rasdan No.1, Nyengseret, Kecamatan Astanaanyar, Kota Bandung, Jawa Barat 40242</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box">
+                    <div class="icon"><i class="fas fa-wheelchair"></i></div>
+                    <h4><a href="https://www.google.com/maps/place/Puskesmas+Balai+Kota+Bandung/@-6.9122691,107.6076886,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e63750e677a7:0xcc3825f8e534fa27!8m2!3d-6.9122744!4d107.6102635!16s%2Fg%2F11hbpjy74k?entry=ttu">Puskesmas Balai Kota Bandung</a></h4>
+                    <p>Jl. Babakan Ciamis, Kecamatan Sumur Bandung, Kota Bandung, Jawa Barat 40117</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                  <div class="icon-box">
+                    <div class="icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4><a href="https://www.google.com/maps/place/Puskesmas+Taman+Sari+Kota+bandung/@-6.8970688,107.6047389,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e65ad1847535:0xce78a42769a7c6b9!8m2!3d-6.8970741!4d107.6073138!16s%2Fg%2F11cspbdhpv?entry=ttu">Puskesmas Taman Sari Kota Bandung</a></h4>
+                    <p>Jl. Kb. Bibit Utara II No. 182/58, Tamansari, Kecamatan Bandung Wetan, Kota Bandung, Jawa Barat 40116</p>
+                  </div>
+                </div>
+<!--tambahkan button--> <div class="text-center">
+                <a href="#faq" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+          </div>
+      </div>
+  </section>
+<!--#Tambahkan button -->
+  <!--End Puskesmas -->
+
+    <!-- ======= Dokter Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Dokter</h2>
+          <p>Berikut Daftar Dokter yang ada di Puskesmas Kota Bandung</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Achmad Peter Syarief.</h4>
+                <span>Doktor Umum</span>
+                <p>UPT Puskesmas Puter</p>
+                <div class="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Putri Wijaya</h4>
+                <span>Doktor Umum</span>
+                <p>UPT Puskesmas Pasundan Kota Bandung</p>
+                <div class="">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dr. Alok Adipurama.</h4>
+                <span>Doktor Umum</span>
+                <p>Puskesmas Dago</p>
+                <div class="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Drg. Amalina Soerjaninggati</h4>
+                <span>Doktor Umum</span>
+                <p>Puskesmas Astana Anyar</p>
+                <div class="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="dokter.html" class="login-btn scrollto"><span class="d-none d-md-inline">Lihat Jadwal Dokter</span></a>
+          </div>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Dibawah ini adalah pertanyaan pertanyaan menarik untuk diketahui masyarakat.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa kelebihan utama menggunakan website Puskeskuy<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Keberadaan website Puskeskuy memberikan aksesibilitas yang lebih baik kepada masyarakat untuk mendapatkan informasi kesehatan, jadwal pelayanan dan berbagailayanan kesehatan yang tersedia.
+                  Hal ini mempermudah komunikasi antara Puskesmas dan masyarakat, serta meningkatkan transparansi dalam penyediaan layanan kesehatan.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bagaimana website Puskeskuy dapat meningkatkan efisiensi administrasi?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Website Puskeskuy dapat mempermudah administrasi dengan meneyediakan platform untuk pendaftaran online, penjadwalan janji temu dan manajemen data pasien.
+                  Hal ini dapat mengurangi waktu tunggu, meminimalkan kesalahan data dan meningkatkan efisiensi dalam pengelolaan informasi pasien serta pelaporan administratif.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apa manfaat bagi masyarakat dengan adanya informasi kesehatan yang disediakan di website Puskeskuy? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dengan adanya informasi kesehatan yang mudah diakses, masyarakat dapat lebih baik memahami penyakit, pencegahan dan promosi kesehatan.
+                  Informasi ini dapat membantu masyarakat membuat keputusan yang lebih baik terkait kesehatan mereka sendiri, serta mempromosikan gaya hidup sehat dan pola hidup lebih baik.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Bagaimana website Puskeskuy dapat meningkatkan keterlibatan masyarakat dalam program-program kesehatan?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Website Puskeskuy dapat menyediakan informasi tentang program program-program kesehatan yang sedang berlangsung, kegiatan sosial dan edukasi kesehatan. Dengan cara ini,
+                  masyarakat dapat lebih terlibat dalam kegiatan kesehatan, seperti imunisasi, pemeriksaan kesehatan berkala dan program pencegahan penyakit, yang pada gilirannya dapat meningkatkan tingkat partisipasi masyarakat.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Bagaimana keberadaan website Puskeskuy dapat meningkatkan kolaborasi dengan pihak eksternal, seperti pemerintah daerah atau organisasi kesehatan lainnya?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Website Puskeskuy memfasilitasi kolaborasi dengan pihak eksternal dengan menyediakan platform untuk berbagi informasi, sumber daya dan hasil riset.
+                  kolaborasi ini dapat memperkuat sistem kesehatan secara keseluruhan dan meningkatkan koordinasi antara Puskesmas, pemerintahan daerah dan organisasi kesehatan lainnya, dalam penyediaan layanan kesehatan yang lebih baik.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Puskeskuy</h3>
+            <br>
+            <p><b>Layanan Pengaduan Konsumen</b></p>
+            <p>
+              PT Sukarasa <br>
+              Jl. Sekeloa Gg. Ciloa Kelurahan Dago Hilir Bandung<br>
+              Indonesia <br><br>
+              <strong>Phone:</strong> 021-5095-9900<br>
+              <strong>Email:</strong> puskeskuy@gmail.com<br>
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Puskeskuy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Kelompok Puskeskuy
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

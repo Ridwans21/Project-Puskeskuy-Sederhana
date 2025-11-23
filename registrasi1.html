@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Puskeskuy - Registrasi</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <style>
+    /* Tulis gaya CSS Anda di sini */
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .back-to-index {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .back-to-index a {
+      text-decoration: none;
+      color: #0099cc; /* Warna tautan biru muda */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Form Registrasi</h2>
+    <form action="proses_registrasi1.php" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="text" name="nama_lengkap" placeholder="Nama Lengkap" required>
+      <label for="ttl">Tanggal Reservasi:</label>
+      <input type="date" name="ttl" placeholder="Tanggal Reservasi" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <label for="puskesmas">Pilih Puskesmas:</label>
+    <select name="puskesmas" id="puskesmas" required>
+      <option value="UPT Puskesmas Puter">UPT Puskesmas Puter</option>
+      <option value="UPT Puskesmas Pasundan Kota Bandung">UPT Puskesmas Pasundan Kota Bandung</option>
+      <option value="Puskesmas Dago">Puskesmas Dago</option>
+      <option value="Puskesmas Astana Anyar">Puskesmas Astana Anyar</option>
+      <option value="Puskesmas Balai Kota Bandung">Puskesmas Balai Kota Bandung</option>
+      <option value="Puskesmas Taman Sari Kota Bandung">Puskesmas Taman Sari Kota Bandung</option>
+      <!-- Tambahkan opsi lain sesuai kebutuhan -->
+    </select>
+      <input type="submit" value="Daftar">
+    </form>
+    <div class="back-to-index">
+      <a href="index.html">Kembali ke Halaman Utama</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

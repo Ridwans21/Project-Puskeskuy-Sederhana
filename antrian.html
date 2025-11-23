@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Antrian</title>
+    <!-- Load CSS jika diperlukan -->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .back-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Daftar Antrian</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Username</th>
+                    <th>Nama Lengkap</th>
+                    <th>Tanggal Reservasi</th>
+                    <th>Email</th>
+                    <th>Nomor Antrian</th>
+                    <th>Puskesmas</th>
+                </tr>
+            </thead>
+            <tbody id="antrianData">
+                <!-- Data dari tabel registrasi_antrian akan dimasukkan di sini menggunakan JavaScript -->
+            </tbody>
+        </table>
+        <a href="index.html" class="back-button">Kembali ke Halaman Utama</a>
+    </div>
+
+    <!-- Load JavaScript untuk melakukan pemanggilan AJAX dan mengisi data -->
+    <script>
+        // Fungsi untuk memuat data dari server
+        function loadData() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Mengonversi JSON yang diterima ke objek JavaScript
+                    var data = JSON.parse(this.responseText);
+                    var tableBody = document.getElementById("antrianData");
+                    // Mengisi tabel dengan data
+                    for (var i = 0; i < data.length; i++) {
+                        var row = `<tr>
+                            <td>${i + 1}</td>
+                            <td>${data[i].username}</td>
+                            <td>${data[i].nama_lengkap}</td>
+                            <td>${data[i].ttl}</td>
+                            <td>${data[i].email}</td>
+                            <td>${data[i].nomor_antrian}</td>
+                            <td>${data[i].puskesmas}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    }
+                }
+            };
+            xhttp.open("GET", "ambil_data.php", true); // Ganti dengan URL yang sesuai
+            xhttp.send();
+        }
+
+        // Memanggil fungsi untuk memuat data saat halaman dimuat
+        window.onload = function() {
+            loadData();
+        };
+    </script>
+</body>
+</html>
